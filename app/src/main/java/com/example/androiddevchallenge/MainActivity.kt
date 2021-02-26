@@ -185,9 +185,11 @@ fun PetCard(pet: PetModel) {
                 exit = slideOutVertically() + shrinkVertically() + fadeOut(),
                 modifier = Modifier.align(Alignment.Center)
             ) {
-                Button(onClick = {
-                    Toast.makeText(context, "Thanks for adopting me!!!", Toast.LENGTH_SHORT).show()
-                }) {
+                Button(
+                    onClick = {
+                        Toast.makeText(context, "Thanks for adopting me!!!", Toast.LENGTH_SHORT).show()
+                    }
+                ) {
                     Text(text = "Adopt ME")
                 }
             }
